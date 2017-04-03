@@ -1,4 +1,4 @@
-Mini-project #1 – Python Programmin
+Mini-project #1 – Python Programming
 
 project content description:
 
@@ -20,8 +20,8 @@ Graph class ()
 	self.name=name
     self.nodes = {}
 		
-	def printnode(self) 								# used in __str__
-	def add_node(self, node) 							# need to pass Node class
+	def printnode(self) 				     # used in __str__
+	def add_node(self, node) 		             # need to pass Node class
 	def remove_node(self, name)
 	def add_edge(self, frm_name, to_name, weight=1)
 	def remove_edge(self, frm_name, to_name)
@@ -46,15 +46,15 @@ Models :  			# Hold all the classes
 	graph
 	node
 	
-tests :   								# Hold sanity and exercises result - all files returns details results
-	node_basic 							# cover all node functionalty  
+tests :   							# Hold sanity and exercises result - all files returns details results
+	node_basic 						# cover all node functionalty  
 	node_questions 						# cover all node exercises questions 
 	graph_basic 						# cover all graph functionalty
 	graph_questions						# cover question 1-4
 	graph_country_region_question.py    # cover The roadmap implementation
-										# chalange disreagrd record with : missing values , datediff<0 ,hours not in range -set 12 , minuts not in range -set 00,month not in rage set=1 
-	
-	graph__non_direct_basic				# build graph - add 2 nodes - add edge - update both nodes 
+					    # chalange disreagrd record with : missing values , datediff<0 ,hours not in range -set 12 						      , minuts not in range -set 00,month not in rage set=1 
+	 
+	graph__non_direct_basic			# build graph - add 2 nodes - add edge - update both nodes 
 	graph__non_direct_social_question	# find_shortest_path('Gad','Simeon') - Take 0.5 minuts  - can be improved
 	
 	
