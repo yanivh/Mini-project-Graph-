@@ -28,7 +28,7 @@ def proccessdata(name):
     # extract paths , time between paths , and number of paths traveled.
     while i<=len(roads )-1:
         if len(roads [i])==4: # avoid cases where record is missing data
-            #function handle hour formats
+            #function handle hour , day , month not in the right formats
             f_handlehour = (lambda hour: str('0') if hour == '00' else str(hour))
             lf_handleday = (lambda day: str('01') if day == '00' else str(hour))
             lf_convertdate = lambda _month: int (monthDict[_month]) if _month in monthDict else int(1)
