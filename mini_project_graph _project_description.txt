@@ -1,0 +1,63 @@
+Mini-project #1 – Python Programmin
+
+project content description:
+
+classes :
+
+Node class():
+	self.name = name
+    self.edges ={} # edge replace pointat
+	
+	is_edge(self,name)
+	def add_edge(self,name,weight=1)
+	def remove_edge(self,name)
+	def get_weight(self,name)
+	def is_isolated(self)
+	def is_neighbor(self,name)
+	
+	
+Graph class ()
+	self.name=name
+    self.nodes = {}
+		
+	def printnode(self) 								# used in __str__
+	def add_node(self, node) 							# need to pass Node class
+	def remove_node(self, name)
+	def add_edge(self, frm_name, to_name, weight=1)
+	def remove_edge(self, frm_name, to_name)
+	def is_edge(self, frm_name, to_name)
+	def is_reachable(self, frm_name, to_name)
+	def find_all_paths(self, frm_name, to_name, path=[]) # Recursive function - mapping all paths from frm_name to to_name
+	def find_shortest_path(self, frm_name, to_name)      # using find_all_paths data
+
+	
+	
+NonDirectionalGraph(Graph):
+
+	def addedge(self, frm_name, to_name, weight=1)
+	def removeedge(self, frm_name, to_name, weight=1):
+
+	
+project structers:
+
+
+Models :  			# Hold all the classes
+	nondirectionalgraph
+	graph
+	node
+	
+tests :   								# Hold sanity and exercises result - all files returns details results
+	node_basic 							# cover all node functionalty  
+	node_questions 						# cover all node exercises questions 
+	graph_basic 						# cover all graph functionalty
+	graph_questions						# cover question 1-4
+	graph_country_region_question.py    # cover The roadmap implementation
+										# chalange disreagrd record with : missing values , datediff<0 ,hours not in range -set 12 , minuts not in range -set 00,month not in rage set=1 
+	
+	graph__non_direct_basic				# build graph - add 2 nodes - add edge - update both nodes 
+	graph__non_direct_social_question	# find_shortest_path('Gad','Simeon') - Take 0.5 minuts  - can be improved
+	
+	
+	
+ 
+	
