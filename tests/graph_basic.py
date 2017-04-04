@@ -95,22 +95,21 @@ mygraph2 = graph.Graph('Y',nodes2)
 
 
 # Magic functions:
-print ('\n\n__eq__ & _ne_ magic function: ')
-
 print('\n__str__  - print (mygraph1)' )
 print (mygraph1)
 
 print ('\n__len__ - nodes number :{}\n'.format(len(mygraph1)))
 
-print ('\n__add__ - new_graph = mygraph1+mygraph2 :\n'.format())
-
+print ('\n__add__ - new_graph = Y+X :'.format())
 new_graph = mygraph1+mygraph2
 
 #include nodes: 1-11
 print(new_graph)
 
 
+
 print ('\n mygraph1.is_reachable(6,1) = {}'.format(mygraph1.is_reachable('6','1')))
+print ('\n mygraph1.is_reachable(7,6) = {}'.format(mygraph1.is_reachable('7','6')))
 
 print ('\n mygraph1.find_all_paths(6,1) :\n'.format())
 paths= mygraph1.find_all_paths('1','6')
@@ -123,28 +122,22 @@ print ('\n mygraph1.get_edge_weight(1,5) : {}'.format(mygraph1.get_edge_weight('
 path=[8,1,5,6]
 print('path=[8,1,5,6] - get_path_weight : {}'.format(mygraph1.get_path_weight(path)))
 
-#x=[]
-#paths= mygraph1.find_all_paths('10','6',x)
-#paths= mygraph1.find_all_paths('9','6',x)
-#for p in paths:
-#  print (p)
-
 
 #add exist node with new edge
-#print('\nadd exist node with new edge :\n')
-#existnode= CreateexistNodewithnewedge()
-#mygraph1.add_node(existnode)
+print('\nadd exist node with new edge :\n')
+existnode= CreateexistNodewithnewedge()
+mygraph1.add_node(existnode)
 
-#new_graph.remove_node('9')
-#new_graph.printnodes()
+print ('new_graph.remove_node(9)')
+new_graph.remove_node('9')
+print (new_graph)
 
-#new_graph.add_edge('1','10',10)
-#new_graph.printnodes()
-#new_graph.add_edge('1','10',20)
 
-#print(new_graph.is_edge('1','10'))
-#new_graph.remove_edge ('1','10')
-#new_graph.printnodes()
-#print(new_graph.is_edge('1','10'))
+print ('new_graph.remove_node(1,10,9)')
+new_graph.add_edge('1','10',10)
+print(new_graph)
 
-#new_graph.is_reachable('4','5')
+print('new_graph.is_edge(1,10) : {}'.format(new_graph.is_edge('1','10')))
+
+print('new_graph.is_reachable(4,5) : {}'.format(new_graph.is_reachable('4','5')))
+
