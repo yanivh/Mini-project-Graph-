@@ -86,7 +86,7 @@ class Graph :
     def remove_node(self, name):
         key_to_remove = ''
         for k in self.nodes.keys():
-            if k.name == name:
+            if k == name:
                 key_to_remove = k
 
         if key_to_remove != '':
@@ -113,9 +113,9 @@ class Graph :
 
     # returns True if to_name is a neighbor of frm_name
     def is_edge(self, frm_name, to_name):
-        for k in self.nodes:
+        for k in self.nodes.keys():
             if k == frm_name:
-                if to_name in v.edges:
+                if to_name in self.nodes[k].edges.keys():
                     return True
                 else:
                     return False
